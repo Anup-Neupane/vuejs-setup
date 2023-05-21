@@ -2,22 +2,22 @@
 
 ## Project setup
 ```
-npm install
+sudo git clone -b main https://github.com/Anup-Neupane/vuejs-setup.git
 ```
 
-### Compiles and hot-reloads for development
+### Go inside repo-folder
 ```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
+cd vuejs-setup
 ```
 
-### Lints and fixes files
+### Run build docker images
 ```
-npm run lint
+sudo docker build -t my-vue-app .
+```
+
+### Run the Docker container
+```
+sudo docker run -p 8080:80 my-vue-app
 ```
 
 ### Customize configuration
